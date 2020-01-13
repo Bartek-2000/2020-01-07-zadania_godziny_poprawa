@@ -2,10 +2,11 @@ public class Klasa {
     private String sec;
     private String min;
     private String hour;
+    private String time;
 
     @Override
     public String toString() {
-        return hour+":"+min+":"+sec;
+        return hour + ":" + min + ":" + sec;
     }
 
     public String getSec() {
@@ -32,12 +33,21 @@ public class Klasa {
         this.hour = hour;
     }
 
+    public String getTime() {
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
+    }
+
     public Klasa() {
     }
 
-    public Klasa(String sec, String min, String hour) {
+    public Klasa(String sec, String min, String hour, String time) {
         this.sec = sec;
         this.min = min;
         this.hour = hour;
+        this.time = time;
     }
 }
